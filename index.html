@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>User Information</h1>
+    <form>
+      <!-- name input   -->
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your Name"
+        required
+        minlength="3"
+        maxlength="15"
+      />
+      <br /><br />
+
+      <!--Email Input   -->
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name=""
+        id="email"
+        placeholder="Enter your Email"
+        required
+        disabled
+      />
+      <br /><br />
+      <!--Password Input  -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name=""
+        id="password"
+        placeholder="Enter your Password"
+        required
+      />
+      <br /><br />
+      <!--Multiple Product selection Choice Input  -->
+      <label for="product">Product</label>
+      <br />
+      <select name="product" id="product">
+        <option value="iphone">iphone</option>
+        <option value="macbook" selected>macbook</option>
+        <option value="samsung">samsung</option>
+        <option value="xiaomi">xiaomi</option>
+        <option value="realme">realme</option>
+      </select>
+
+      <br /><br />
+      <!-- Textarea Input -->
+      <label for="messages">Messages </label>
+      <br />
+      <textarea
+        name="messages "
+        id="messages "
+        placeholder="Enter your issues"
+      ></textarea>
+      <br /><br />
+      <!-- Checkbox Input  note*= alwayse remember to write input inside the label for checkbox  -->
+      <div>
+        <label for="html">
+          <input type="checkbox" id="html" name="languages" />
+          Html
+        </label>
+        <label for="css">
+          <input type="checkbox" id="css" name="languages" />
+          Css
+        </label>
+        <label for="jacascript">
+          <input type="checkbox" id="jacascript" name="languages" />
+          Jacascript
+        </label>
+        <label for="react">
+          <input type="checkbox" id="react" name="languages" />
+          React
+        </label>
+      </div>
+
+      <br />
+
+      <!-- Radio Selection Input   -->
+
+      <label for="small">
+        <input type="radio" name="size" id="small" />
+        Small
+      </label>
+
+      <label for="medium">
+        <input type="radio" name="size" id="medium" checked />
+        Medium
+      </label>
+      <label for="large">
+        <input type="radio" name="size" id="large" />
+        Large
+      </label>
+      <label for="extra large">
+        <input type="radio" name="size" id="extra large" checked />
+        Extra large
+      </label>
+      <br /><br />
+      <!-- Color Palet Input -->
+      <div>
+        <label for="color">Colors</label>
+        <input type="color" name="color" id="color " />
+      </div>
+      <br />
+      <!-- Date Input  -->
+      <div>
+        <label for="date">Dates</label>
+        <input type="date" name="date" id="date " />
+      </div>
+      <br />
+      <!-- time input  -->
+      <div>
+        <label for="time">Times</label>
+        <input type="time" name="time" id="time " />
+      </div>
+      <br />
+      <!--Range Input   -->
+      <div>
+        <label for="range">Ranges</label>
+        <input type="range" name="range" id="range " step="50" />
+      </div>
+      <br />
+      <!-- Url Input -->
+      <div>
+        <label for="url">Urls</label>
+        <input type="url" name="url" id="url " required />
+      </div>
+      <br />
+      <div>
+        <label for="location">Location visited:</label>
+        <select name="location" id="location">
+          <option value="">Select location</option>
+          <option value="nyork">New York</option>
+          <option value="vancouver">Vancouver</option>
+          <option value="atlantis">Atlantis</option>
+          <option value="alpha">Alpha Centauri</option>
+          <option value="blackpool">Blackpool</option>
+          <option value="bognor">Bognor Regis</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- Datalists -->
+      <!-- General List -->
+      <label for="favlanguages">Favorite Programming languages</label>
+      <input list="languages" name="favlanguages" id="favlanguages" />
+      <datalist id="languages">
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP"></option>
+        <option value="Python"></option>
+        <option value="ruby"></option>
+        <option value="C"></option>
+      </datalist>
+      <br />
+      <br />
+
+      <!-- Time -->
+      <label for="time zone">Time</label>
+      <input type="time" list="time zone" />
+      <datalist id="time zone">
+        <option value="12:00"></option>
+        <option value="11:00"></option>
+        <option value="1:00"></option>
+        <option value="2:00"></option>
+      </datalist>
+
+      <br />
+      <br />
+      <!-- <input type="submit" value="submit" /> -->
+      <button type="submit">Submit kar</button>
+    </form>
+  </body>
+</html>
